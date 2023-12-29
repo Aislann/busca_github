@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.App{
+  min-height:300px;
+  min-width: 50%;
+  border: 4px solid transparent;
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  animation: changeColor 10s linear infinite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.App input{
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.App button{
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 8px;
+  margin: 10px;
+}
+
+
+@keyframes changeColor {
+  0% {
+      border-color: rgb(255, 0, 0); 
+  }
+  25% {
+      border-color: rgb(0, 255, 0); 
+  }
+  50% {
+      border-color: rgb(0, 0, 255); 
+  }
+  75% {
+      border-color: rgb(255, 255, 0); 
+  }
+  100% {
+      border-color: rgb(255, 0, 255); 
+  }
+}
