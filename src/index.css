@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 body{
   background-color: gray;
@@ -11,30 +11,37 @@ body{
   align-items: center;
   height: 100vh;
   width: 100vw;
+  background-size: cover;
+  background-image: url(./assets/img1.jpg);
 }
+
 .App{
   min-height:300px;
   min-width: 50%;
-  border: 4px solid transparent;
-  background-color: white;
+  border: 4px solid;
   padding: 2rem;
   margin: 2rem;
-  border-radius: 1rem;
-  animation: changeColor 10s linear infinite;
+  border-radius: 2rem;
+  animation: changeColor 15s linear infinite;
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
-.title{
-  font-size: 30px;
+.App label{
+  font-size: 35px;
   display: flex;
   justify-content: center;
 }
 
 .App input{
-  font-size: 18px;
-  border-radius: 30px;
+  font-size: 20px;
+  border-radius: 2rem;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  width: 110%;
 }
 
 .App button{
@@ -42,8 +49,10 @@ body{
   border-radius: 30px;
   padding: 8px;
   margin: 10px;
+  color: white;
+  background-color: transparent;
+  border-color: white;
 }
-
 
 @keyframes changeColor {
   0% {
@@ -60,5 +69,34 @@ body{
   }
   100% {
       border-color: rgb(255, 0, 255); 
+  }
+}
+
+.img_github {
+  width: 100px;
+  height: 100px; 
+  position: absolute; 
+  top: 1%;
+  left: 1%; 
+}
+
+.informations{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informations img{
+  width: 245px;  /* Defina a largura desejada */
+  height: auto;
+  border-radius: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .App{
+    margin-top: 130px;
+    max-width: 100vw;
+    margin-right: 10%;
   }
 }
