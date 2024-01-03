@@ -31,7 +31,7 @@ function App() {
       <div className='App'> 
 
         <label htmlFor="usuario" className='usuario'>Buscar Github</label> <br />
-        <input type="text" id='usuario' placeholder='Nome de usuário Github' value={usuario} onChange={e => setUsuario(e.target.value)} /> <br />
+        <input type="text" id='usuario' placeholder='Nome de usuário' value={usuario} onChange={e => setUsuario(e.target.value)} /> <br />
         <button onClick={handleBuscar} id='submit'>Pesquisar</button>
         
         <div className='informations'>

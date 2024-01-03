@@ -43,7 +43,7 @@ body{
   color: white;
   background-color: transparent;
   border-color: white;
-  width: 110%;
+  max-width: 110%;
 }
 
 .App button{
